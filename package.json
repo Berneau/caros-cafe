@@ -1,0 +1,25 @@
+{
+  "name": "caroscafe",
+  "version": "1.0.0",
+  "description": "clubbing homepage for caros cafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Berneau/caros-cafe.git"
+  },
+  "author": "bernhard.steger@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Berneau/caros-cafe/issues"
+  },
+  "homepage": "https://github.com/Berneau/caros-cafe#readme",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
