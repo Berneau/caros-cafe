@@ -1,0 +1,76 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 40vh;
+}
+
+section, footer {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  background-color: #000;
+}
+
+section#landing {
+  background: url(../assets/images/bg.png) no-repeat center center;
+  background-size: cover;
+
+  .scroll {
+    position: relative;
+    top: 35vh;
+
+    img {
+      width: 64px;
+      position: relative;
+      -webkit-animation: scroll-animation 2s infinite; /* Safari 4+ */
+      -moz-animation:    scroll-animation 2s infinite; /* Fx 5+ */
+      -o-animation:      scroll-animation 2s infinite; /* Opera 12+ */
+      animation:         scroll-animation 2s infinite; /* IE 10+, Fx 29+ */
+    }
+  }
+}
+
+
+footer {
+  height: 80px;
+  background-color: #dfdfdf;
+}
+
+
+@-webkit-keyframes scroll-animation {
+  0%   { opacity: 0.3; top: 0; }
+  15%  { opacity: 1; }
+  50%  { opacity: 0; top: 10px; }
+  100% { opacity: 0; top: 0; }
+}
+@-moz-keyframes scroll-animation {
+  0%   { opacity: 0.3; top: 0; }
+  15%  { opacity: 1; }
+  50%  { opacity: 0; top: 10px; }
+  100% { opacity: 0; top: 0; }
+}
+@-o-keyframes scroll-animation {
+  0%   { opacity: 0.3; top: 0; }
+  15%  { opacity: 1; }
+  50%  { opacity: 0; top: 10px; }
+  100% { opacity: 0; top: 0; }
+}
+@keyframes scroll-animation {
+  0%   { opacity: 0.3; top: 0; }
+  15%  { opacity: 1; }
+  50%  { opacity: 0; top: 10px; }
+  100% { opacity: 0; top: 0; }
+}
