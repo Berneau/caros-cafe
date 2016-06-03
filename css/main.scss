@@ -35,10 +35,10 @@ section#landing {
     img {
       width: 64px;
       position: relative;
-      -webkit-animation: scroll-animation 2s infinite; /* Safari 4+ */
-      -moz-animation:    scroll-animation 2s infinite; /* Fx 5+ */
-      -o-animation:      scroll-animation 2s infinite; /* Opera 12+ */
-      animation:         scroll-animation 2s infinite; /* IE 10+, Fx 29+ */
+      -webkit-animation: scroll-animation 1.5s infinite; /* Safari 4+ */
+      -moz-animation:    scroll-animation 1.5s infinite; /* Firefox 5+ */
+      -o-animation:      scroll-animation 1.5s infinite; /* Opera 12+ */
+      animation:         scroll-animation 1.5s infinite; /* IE 10+, Firefox 29+ */
     }
   }
 }
@@ -49,28 +49,22 @@ footer {
   background-color: #dfdfdf;
 }
 
+@mixin scroll-animation {
+  0%   { opacity: 0; top: -15px; }
+  50%  { opacity: 1; }
+  75%  { opacity: 0; }
+  100% { opacity: 0; top: 0; }
+}
 
 @-webkit-keyframes scroll-animation {
-  0%   { opacity: 0.3; top: 0; }
-  15%  { opacity: 1; }
-  50%  { opacity: 0; top: 10px; }
-  100% { opacity: 0; top: 0; }
+  @include scroll-animation;
 }
 @-moz-keyframes scroll-animation {
-  0%   { opacity: 0.3; top: 0; }
-  15%  { opacity: 1; }
-  50%  { opacity: 0; top: 10px; }
-  100% { opacity: 0; top: 0; }
+  @include scroll-animation;
 }
 @-o-keyframes scroll-animation {
-  0%   { opacity: 0.3; top: 0; }
-  15%  { opacity: 1; }
-  50%  { opacity: 0; top: 10px; }
-  100% { opacity: 0; top: 0; }
+  @include scroll-animation;
 }
 @keyframes scroll-animation {
-  0%   { opacity: 0.3; top: 0; }
-  15%  { opacity: 1; }
-  50%  { opacity: 0; top: 10px; }
-  100% { opacity: 0; top: 0; }
+  @include scroll-animation;
 }
