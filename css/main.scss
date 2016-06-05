@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Dancing+Script);
 
-
-
 html, body {
   padding: 0;
   margin: 0;
@@ -10,11 +8,7 @@ html, body {
 body {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  font-size: 48px;
-  margin-top: 40vh;
+  background-color: #faf7f5;
 }
 
 section, footer {
@@ -23,19 +17,49 @@ section, footer {
   float: left;
 }
 
+footer {
+  height: 50px;
+  color: #333;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #3788f9;
+
+    &:hover {
+      color: darken(#3788f9, 20%);
+    }
+  }
+}
+
 section {
   min-height: 100vh;
   text-align: center;
-  background-color: #000;
+
+  .column {
+    width: 50%;
+    min-height: 300px;
+    max-height: 100vh;
+    position: relative;
+    float: left;
+  }
+
+  .audio-info {
+    margin-top: 20vh;
+    font-size: 22px;
+  }
 }
 
-section#landing {
-  background: url(../assets/images/bg.png) no-repeat center center;
+
+section.header {
+  background: url(../assets/images/bg.jpg) no-repeat center center;
   background-size: cover;
 
   h1 {
     font-family: 'Dancing Script', cursive;
+    margin-top: 40vh;
     font-size: 100px;
+    font-weight: 100;
   }
 
   .scroll {
@@ -53,11 +77,59 @@ section#landing {
   }
 }
 
+section.flow {
+  h1 {
+    font-size: 48px;
+    font-weight: 100;
+    margin: 80px 0;
+    font-weight: 100;
 
-footer {
-  height: 80px;
-  background-color: #dfdfdf;
+    &:hover:after {
+      content: "#";
+      position: absolute;
+      opacity: 0.5;
+      margin-left: 10px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    font-size: 20px;
+
+    li {
+      &:nth-of-type(odd) {
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      &:nth-of-type(even) {
+        margin-bottom: 80px;
+      }
+    }
+
+  }
+
+  &#section-1 {
+    color: #333333;
+
+    #map {
+      min-width: 300px;
+      max-width: 35vw;
+      min-height: 300px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &#section-2 {
+    background: url(../assets/images/section-2.jpg) no-repeat center center;
+    background-size: cover;
+  }
 }
+
+
+
+
 
 @mixin scroll-animation {
   0%   { opacity: 0; top: -15px; }
