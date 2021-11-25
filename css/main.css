@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Dancing+Script);
+html, body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #faf7f5; }
+
+section, footer {
+  width: 100%;
+  position: relative;
+  float: left; }
+
+footer {
+  height: 50px;
+  color: #333;
+  text-align: center; }
+  footer a {
+    text-decoration: none;
+    color: #3788f9; }
+    footer a:hover {
+      color: #0655c4; }
+
+section {
+  min-height: 100vh;
+  text-align: center; }
+  section .column {
+    width: 50%;
+    min-height: 300px;
+    max-height: 100vh;
+    position: relative;
+    float: left; }
+  section .audio-info {
+    margin-top: 20vh;
+    font-size: 22px; }
+
+section.header {
+  background: url(../assets/images/bg.jpg) no-repeat center center;
+  background-size: cover; }
+  section.header h1 {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+    font-size: 100px;
+    font-weight: 100; }
+  section.header .logo {
+    margin-top: 25vh;
+    height: 150px; }
+  section.header .scroll {
+    top: 15vh;
+    position: relative; }
+    section.header .scroll img {
+      width: 64px;
+      position: relative;
+      -webkit-animation: scroll-animation 1.5s infinite;
+      /* Safari 4+ */
+      -moz-animation: scroll-animation 1.5s infinite;
+      /* Firefox 5+ */
+      -o-animation: scroll-animation 1.5s infinite;
+      /* Opera 12+ */
+      animation: scroll-animation 1.5s infinite;
+      /* IE 10+, Firefox 29+ */ }
+
+section.flow h1 {
+  font-size: 48px;
+  font-weight: 100;
+  margin: 80px 0;
+  font-weight: 100; }
+  section.flow h1:hover:after {
+    content: "#";
+    position: absolute;
+    opacity: 0.5;
+    margin-left: 10px; }
+
+section.flow .detail-list {
+  list-style: none;
+  font-size: 20px; }
+  section.flow .detail-list li:nth-of-type(odd) {
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: letter-spacing 0.3s;
+    -webkit-transition: letter-spacing 0.3s; }
+    section.flow .detail-list li:nth-of-type(odd):hover {
+      letter-spacing: 3px; }
+  section.flow .detail-list li:nth-of-type(even) {
+    margin-bottom: 80px; }
+
+section.flow#section-1 {
+  color: #333333; }
+  section.flow#section-1 #map {
+    min-width: 300px;
+    max-width: 35vw;
+    min-height: 300px;
+    height: 500px;
+    margin: 0 auto; }
+
+section.flow#section-2 {
+  background: url(../assets/images/section-2.jpg) no-repeat center center;
+  background-size: cover; }
+
+@-webkit-keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    top: -15px; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    top: 0; } }
+
+@-moz-keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    top: -15px; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    top: 0; } }
+
+@-o-keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    top: -15px; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    top: 0; } }
+
+@keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    top: -15px; }
+  50% {
+    opacity: 1; }
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 0;
+    top: 0; } }
