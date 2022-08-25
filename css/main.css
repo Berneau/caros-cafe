@@ -1,4 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Dancing+Script);
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/assets/fonts/DancingScript-Regular.ttf')  format('truetype');
+}
+
 html, body {
   padding: 0;
   margin: 0; }
